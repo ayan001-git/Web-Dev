@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Background Images Example</title>
+<style>
+/* Фон для всего body, повторение отключено, фиксированное и cover */
+body.cover {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Фон для body растянут на весь экран */
+body.stretch {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Фон для отдельного параграфа */
+p.background {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+}
+</style>
+</head>
+<body class="cover">
+
+<h1>HTML Background Images</h1>
+
+<p>This page has a full background image that covers the entire viewport.</p>
+
+<p class="background">This paragraph has its own background image.</p>
+
+<!-- Кнопки для переключения -->
+<button onclick="document.body.className='cover'">Cover Background</button>
+<button onclick="document.body.className='stretch'">Stretch Background</button>
+
+</body>
+</html>
