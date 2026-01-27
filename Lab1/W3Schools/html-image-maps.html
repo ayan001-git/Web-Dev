@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Image Maps Example</title>
+</head>
+<body>
+
+<h1>HTML Image Map Example</h1>
+
+<!-- Image with usemap -->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" style="width:500px;height:auto;">
+
+<!-- Image map definition -->
+<map name="workmap">
+  <!-- Rectangular area -->
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  
+  <!-- Rectangular area -->
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  
+  <!-- Circular area with JavaScript alert -->
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+    alert("You clicked the coffee cup!");
+}
+</script>
+
+</body>
+</html>
