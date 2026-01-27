@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table Padding & Spacing</title>
+  <style>
+    table {
+      border-collapse: separate; /* важно для border-spacing */
+      border: 1px solid black;
+      border-spacing: 20px; /* пространство между ячейками */
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 15px; /* отступ внутри ячеек */
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Пример отдельных отступов по сторонам */
+    .custom-padding td {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<h1 style="text-align:center;">HTML Table Padding & Spacing Example</h1>
+
+<h2>1. Table with Padding</h2>
+<table>
+  <tr>
+    <th>Col 1</th>
+    <th>Col 2</th>
+    <th>Col 3</th>
+  </tr>
+  <tr>
+    <td>hello</td>
+    <td>hello</td>
+    <td>hello</td>
+  </tr>
+  <tr>
+    <td>hello</td>
+    <td>hello</td>
+    <td>hello</td>
+  </tr>
+</table>
+
+<h2>2. Table with Custom Padding on Each Side</h2>
+<table class="custom-padding">
+  <tr>
+    <th>Col 1</th>
+    <th>Col 2</th>
+    <th>Col 3</th>
+  </tr>
+  <tr>
+    <td>hello</td>
+    <td>hello</td>
+    <td>hello</td>
+  </tr>
+  <tr>
+    <td>hello</td>
+    <td>hello</td>
+    <td>hello</td>
+  </tr>
+</table>
+
+<h2>3. Table with Cell Spacing</h2>
+<table>
+  <tr>
+    <th>Col 1</th>
+    <th>Col 2</th>
+    <th>Col 3</th>
+  </tr>
+  <tr>
+    <td>hello</td>
+    <td>hello</td>
+    <td>hello</td>
+  </tr>
+  <tr>
+    <td>hello</td>
+    <td>hello</td>
+    <td>hello</td>
+  </tr>
+</table>
+
+</body>
+</html>
