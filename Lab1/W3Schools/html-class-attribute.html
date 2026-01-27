@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Class Attribute</title>
+  <style>
+    /* Класс для блоков city */
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    /* Класс для текста note */
+    .note {
+      font-size: 120%;
+      color: red;
+    }
+
+    /* Дополнительный класс main */
+    .main {
+      border: 3px dashed yellow;
+    }
+  </style>
+</head>
+<body>
+
+<h1>HTML Class Attribute Examples</h1>
+
+<!-- Использование класса city для div -->
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<!-- Использование класса note для span -->
+<h2>My <span class="note">Important</span> Heading</h2>
+<p>This is some <span class="note">important</span> text.</p>
+
+<!-- Множественные классы -->
+<h2 class="city main">London with Main Class</h2>
+<h2 class="city">Paris</h2>
+
+<!-- Разные элементы с одним классом -->
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+
+<!-- Использование класса в JavaScript -->
+<button onclick="hideCities()">Click to hide all cities</button>
+
+<script>
+function hideCities() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
