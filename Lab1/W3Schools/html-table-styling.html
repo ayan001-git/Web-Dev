@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table Styling</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    /* Горизонтальные зебра-полосы */
+    tr:nth-child(even) {
+      background-color: rgba(150, 212, 212, 0.4);
+    }
+
+    /* Вертикальные зебра-полосы */
+    th:nth-child(even), td:nth-child(even) {
+      background-color: rgba(150, 212, 212, 0.4);
+    }
+
+    /* Горизонтальные линии (dividers) */
+    tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #96D4D4;
+    }
+  </style>
+</head>
+<body>
+
+<h1 style="text-align:center;">HTML Table Styling Example</h1>
+
+<table>
+  <tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+  </tr>
+</table>
+
+<h2 style="text-align:center;">Horizontal Divider Example</h2>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+</table>
+
+</body>
+</html>
