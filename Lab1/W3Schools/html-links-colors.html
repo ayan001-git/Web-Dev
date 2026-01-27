@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Link Colors</title>
+
+    <style>
+        /* Link colors */
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        /* Link styled as button */
+        .button-link:link, .button-link:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+        .button-link:hover, .button-link:active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>HTML Link Colors Example</h1>
+
+<!-- Different states of links -->
+<p><a href="https://www.w3schools.com/">Normal Link</a></p>
+<p><a href="https://www.google.com/">Visited Link (try visiting first)</a></p>
+<p><a href="https://www.wikipedia.org/">Hover/Active Link</a></p>
+
+<h2>Link as a Button</h2>
+<a class="button-link" href="https://www.w3schools.com/">This is a link button</a>
+
+</body>
+</html>
