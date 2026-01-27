@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Div Element</title>
+  <style>
+    /* Centered div example */
+    .center-div {
+      width: 300px;
+      margin: auto;
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Float example */
+    .float-container {
+      width: 100%;
+      overflow: auto;
+      margin-bottom: 20px;
+    }
+    .float-container div {
+      width: 33%;
+      float: left;
+      background-color: #d6eeee;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Inline-block example */
+    .inline-container div {
+      width: 30%;
+      display: inline-block;
+      background-color: #ffe0e0;
+      padding: 10px;
+      margin-right: 1%;
+      box-sizing: border-box;
+    }
+
+    /* Flex example */
+    .flex-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .flex-container > div {
+      width: 33%;
+      background-color: #e0ffe0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Grid example */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      gap: 10px;
+    }
+    .grid-container > div {
+      background-color: #eee0ff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>HTML Div Element Examples</h1>
+
+<h2>Centered Div</h2>
+<div class="center-div">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+</div>
+
+<h2>Float Example</h2>
+<div class="float-container">
+  <div>London</div>
+  <div>Oslo</div>
+  <div>Rome</div>
+</div>
+
+<h2>Inline-block Example</h2>
+<div class="inline-container">
+  <div>London</div>
+  <div>Oslo</div>
+  <div>Rome</div>
+</div>
+
+<h2>Flex Example</h2>
+<div class="flex-container">
+  <div>London</div>
+  <div>Oslo</div>
+  <div>Rome</div>
+</div>
+
+<h2>Grid Example</h2>
+<div class="grid-container">
+  <div>London</div>
+  <div>Oslo</div>
+  <div>Rome</div>
+</div>
+
+</body>
+</html>
