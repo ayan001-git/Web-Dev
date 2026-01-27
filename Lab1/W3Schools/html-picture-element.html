@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Picture Element Example</title>
+<style>
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>HTML Picture Element Example</h1>
+
+<picture>
+  <!-- Для больших экранов (ширина ≥ 650px) -->
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  
+  <!-- Для средних экранов (ширина ≥ 465px) -->
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  
+  <!-- Для маленьких экранов или если <source> не подходит -->
+  <img src="img_girl.jpg" alt="Responsive Image Example">
+</picture>
+
+<p>This image will change depending on your screen size.</p>
+
+<hr>
+
+<h2>Example with multiple formats</h2>
+
+<picture>
+  <!-- PNG изображение -->
+  <source srcset="img_avatar.png" type="image/png">
+  
+  <!-- JPG изображение -->
+  <source srcset="img_girl.jpg" type="image/jpeg">
+  
+  <!-- fallback для браузеров, которые не поддерживают <picture> -->
+  <img src="img_beatles.gif" alt="Fallback Image" style="width:auto;">
+</picture>
+
+<p>The browser will choose the first supported format.</p>
+
+</body>
+</html>
