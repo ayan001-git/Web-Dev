@@ -1,0 +1,160 @@
+/* === BASE === */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+    color: #24292f;
+  }
+  main {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px 40px;
+  }
+  h1, h2 {
+    margin: 0 0 12px 0;
+  }
+  
+  /* === HERO === */
+  .hero {
+    background-color: #24292f;
+    color: white;
+    padding: 100px 20px 80px 20px;
+    text-align: center;
+  }
+  .hero-container {
+    max-width: 700px;
+    margin: auto;
+  }
+  .hero p {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  .hero-btn {
+    background-color: #2ea44f;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .hero-btn:hover {
+    background-color: #269943;
+  }
+  
+  /* === PRICING CARDS === */
+  .pricing {
+    padding: 80px 0 60px 0;
+  }
+  .pricing-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 25px;
+    min-width: 280px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .card h2 {
+    font-size: 1.6rem;
+  }
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 18px 0;
+  }
+  .price span {
+    font-size: 0.9rem;
+    color: #57606a;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+  }
+  li {
+    padding: 6px 0;
+    border-bottom: 1px solid #e1e4e8;
+    font-size: 0.95rem;
+  }
+  .card-btn {
+    background-color: #2ea44f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .card-btn:hover {
+    background-color: #269943;
+  }
+  .outline-btn {
+    border: 2px solid #2ea44f;
+    color: #2ea44f;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .outline-btn:hover {
+    background-color: #eef7ee;
+  }
+  
+  /* BADGE POPULAR */
+  .badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f6fc;
+    color: #0366d6;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+  
+  /* === ADD-ONS === */
+  .addons {
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+  }
+  .addon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+  }
+  .addon-card {
+    background-color: white;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 900px) {
+    .pricing-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 90%;
+    }
+  }
+  
