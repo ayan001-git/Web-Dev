@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <div class="product">
+        <div class="product__list" >
+            <div class="product__item" *ngFor="let product of productList; let i = index">
+                <app-product-component [product]="product" (productId)="delete($event)" />
+            </div>
+        </div>
+    </div>
+</div>

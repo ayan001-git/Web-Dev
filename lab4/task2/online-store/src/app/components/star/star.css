@@ -1,0 +1,10 @@
+.stars{
+    display: flex;
+
+}
+
+.star{
+    color: #F7BB07;
+    width: 25px;
+    height: 25px;
+}

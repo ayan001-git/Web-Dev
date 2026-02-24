@@ -1,0 +1,15 @@
+<form action="">
+    <label>
+        Username:
+        <input type="text" [formField]="loginForm.username">
+    </label>
+    <label>
+        Email:
+        <input type="email" [formField]="loginForm.email">
+    </label>
+    <label>
+        Password:
+        <input type="password" [formField]="loginForm.password">
+    </label>
+    <button (click)="displayForm()" type="button">Send</button>
+</form>

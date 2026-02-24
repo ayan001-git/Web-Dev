@@ -1,0 +1,19 @@
+<div class="filterItem" >
+
+    <div class="filterItem__label">Category</div>
+    <div class="filterItem__main " (click)="setStatus()">
+        All
+    </div>
+
+    <ul [class]="listClass()">
+        <li (click)="select(0)">
+            All
+        </li>
+        @for (item of categoryData.getData(); track $index){
+            <li (click)="select(item.id)">
+                {{item.view}}
+            </li>
+        }
+    </ul>
+</div>
+

@@ -1,0 +1,31 @@
+.filterItem{
+    padding: 10px 0;
+}
+
+.filterItem__label{
+    padding: 10px 0;
+}
+
+.filterItem__main{
+    padding: 10px 20px;
+    background-color: #0E0E0E;
+}
+
+.filterItem__list{
+    list-style: none;
+    background-color: #0E0E0E;
+    display: none;
+    opacity: 0;
+    transition: all 0.25s;
+    transition: all 0.25s allow-discrete;
+}
+
+.filterItem__list.active{
+    display: block;
+    opacity: 1;
+}
+
+.filterItem__list li{
+    padding: 10px;
+    cursor: pointer;
+}

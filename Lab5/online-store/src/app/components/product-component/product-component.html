@@ -1,0 +1,46 @@
+<div class="product">
+    <div class="product__img">
+
+        <img src="{{product.image}}" alt="">
+    </div>
+    <div class="product__bottom">
+        <a [href]="product.links" target="_blank">
+            <h1 class="product__title">{{ product.name }}</h1>
+        </a>
+        <div class="product__rating">
+            <div class="stars">
+                <app-star [rating]="product.rating"/>
+            </div>
+            <div class="like" [class.active]="isLiked" (click)="like()">
+                <div class="count">{{product.likes}}</div>
+                <mat-icon class="heart">favorite</mat-icon>
+
+            </div>
+        </div>
+        <div class="product__description">
+            <p>
+                {{ product.description }}
+            </p>
+        </div>
+        <div class="product__price">
+            <div class="price__item price__price">Цена</div>
+            <div class="price__item">{{ product.price }} тг</div>
+        </div>
+        <div class="social">
+            <a [href]="showTelegram(product.links, product.name)">
+                <div class="social__wrapper telegram">
+                    Telegram
+                </div>
+            </a>
+            <a [href]="showWhatsapp(product.links)">
+                <div class="social__wrapper whatsapp">
+                    Whatsapp
+                </div>
+            </a>
+        </div>
+        <button class="delete" (click)="delete(product.id)">
+            delete
+        </button>
+    </div>
+
+</div>

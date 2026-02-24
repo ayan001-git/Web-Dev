@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <header>
+
+    </header>
+    <main>
+        <div class="layout">
+            <div class="sidebar">
+                <app-sidebar (selection)="select($event)"/>
+            </div>
+            <div class="content">
+                @if (products) {
+                    <app-product-list-component [productList]="products" (productId)="delete($event)"/>
+
+                }@else{
+                    <div>none</div>
+                }
+            </div>
+        </div>
+
+    </main>
+</div>
